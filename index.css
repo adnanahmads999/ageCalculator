@@ -21,32 +21,57 @@ body{
     height: 90vh;
 }
 
-.text{
+.text {
     padding: 1rem;
     font-size: 5rem;
+    text-align: center;
 }
 
-form{
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 3rem; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .text {
+        font-size: 2rem;
+    }
+}
+
+
+form {
     padding: 4%;
-
-    display: flex; /* Set the form as a flex container */
-    flex-direction: row; /* Arrange children in a row */
-    align-items: center; /* Center vertically within the form */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-
-    /* background-color: rgba(0, 255, 255, 0.3); */
     background-color: rgb(182 9 90 / 14%);
     border-radius: 7px;
 }
 
-input{
+@media screen and (max-width: 768px) {
+    form {
+        flex-direction: column;
+        padding-left: 1rem;
+        gap: 1rem;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    form {
+        padding: 2%;
+    }
+}
+
+
+input {
     font-size: 1.1rem;
     border-radius: 7px;
     color: black;
     font-weight: bold;
-
     padding: 0.7rem 2.5rem;
-    /* margin: 0 0.4rem; */
     margin-right: 20px;
     border: 0;
     outline: 0;
@@ -54,11 +79,25 @@ input{
     width: 12rem;
 }
 
+@media screen and (max-width: 768px) {
+    input {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    input {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+
 .button{
     background-color: yellow;
 }
 
-#result{
+#result {
     width: 32rem;
     background-color: #cdff7f;
     margin: 2rem 0rem;
@@ -68,3 +107,21 @@ input{
     color: #130b0a;
     font-family: sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+    #result {
+        width: 20rem;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #result {
+        width: 10rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
