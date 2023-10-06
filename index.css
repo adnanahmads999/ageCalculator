@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    align-content: center;
+}
+body{
+    background-image: radial-gradient(circle, #d750e7 0%, #00d4ff 100%);
+}
+.container{
+    /* margin-top: 20%;
+    margin-left: 15%; */
+    /* margin: 19%; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* margin-right: 40%; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.text{
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+form{
+    padding: 4%;
+
+    display: flex; /* Set the form as a flex container */
+    flex-direction: row; /* Arrange children in a row */
+    align-items: center; /* Center vertically within the form */
+    justify-content: center;
+
+    /* background-color: rgba(0, 255, 255, 0.3); */
+    background-color: rgb(182 9 90 / 14%);
+    border-radius: 7px;
+}
+
+input{
+    font-size: 1.1rem;
+    border-radius: 7px;
+    color: black;
+    font-weight: bold;
+
+    padding: 0.7rem 2.5rem;
+    /* margin: 0 0.4rem; */
+    margin-right: 20px;
+    border: 0;
+    outline: 0;
+    position: relative;
+    width: 12rem;
+}
+
+.button{
+    background-color: yellow;
+}
+
+#result{
+    width: 32rem;
+    background-color: #cdff7f;
+    margin: 2rem 0rem;
+    font-size: 1.45rem;
+    padding: 1rem 2rem;
+    border-radius: 27px;
+    color: #130b0a;
+    font-family: sans-serif;
+}
